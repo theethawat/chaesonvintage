@@ -2,14 +2,15 @@
 
 Adding Information by Theethawat Savastham
 https://www.chaesonvintage.com
+Thank You beautiful HTML Theme
 
 # Theme From uiCookies.com
 
-THEME: Resto - Free Bootstrap Theme
-AUTHOR: uiCookies.com
-AUTHOR URI: https://uiCookies.com/
+- _THEME:_ Resto - Free Bootstrap Theme
+- _AUTHOR:_ uiCookies.com
+- _AUTHOR URI:_ https://uiCookies.com/
 
-CREDITS:
+## CREDITS:
 
 - Bootstrap
   http://getbootstrap.com/
