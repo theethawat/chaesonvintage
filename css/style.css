@@ -1990,7 +1990,7 @@ section[data-section="menu"] {
 
 @media screen and (max-width: 768px) {
   .probootstrap-heading .primary-heading {
-    font-size: 50px;
+    font-size: 36px;
     margin-bottom: 0.5em;
   }
 }
@@ -2022,7 +2022,7 @@ section[data-section="menu"] {
 
 @media screen and (max-width: 768px) {
   .probootstrap-heading .secondary-heading {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
