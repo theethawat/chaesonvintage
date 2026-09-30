@@ -1,0 +1,82 @@
+/* ===== Chae Son Vintage — custom layer (ส่วนที่ Bootstrap ไม่มีให้เท่านั้น) ===== */
+:root {
+  --cs-green: #3f7a3a;
+  --cs-green-dark: #2d5a29;
+  --cs-teal: #2ab0b8;
+  --cs-brown: #5a4033;
+  --cs-cream: #faf7f1;
+
+  --bs-body-font-family: "Sarabun", system-ui, -apple-system, sans-serif;
+  --bs-body-color: #3b3b3b;
+  --bs-body-bg: var(--cs-cream);
+  --bs-link-color-rgb: 63, 122, 58;
+  --bs-link-hover-color-rgb: 45, 90, 41;
+}
+
+h1, h2, h3, h4, h5, h6,
+.font-heading, .navbar-brand, .btn, .display-1, .display-2,
+.display-3, .display-4, .display-5, .display-6 {
+  font-family: "Kanit", system-ui, sans-serif;
+  font-weight: 500;
+  letter-spacing: .01em;
+}
+
+body { font-size: 1.0625rem; line-height: 1.85; }
+
+/* ---- Utility แบรนด์ ---- */
+.text-brand      { color: var(--cs-green) !important; }
+.text-brand-teal { color: var(--cs-teal) !important; }
+.bg-brand        { background-color: var(--cs-green) !important; }
+.bg-cream        { background-color: var(--cs-cream) !important; }
+
+.btn-brand {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--cs-green);
+  --bs-btn-border-color: var(--cs-green);
+  --bs-btn-hover-bg: var(--cs-green-dark);
+  --bs-btn-hover-border-color: var(--cs-green-dark);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-bg: var(--cs-green-dark);
+  --bs-btn-active-border-color: var(--cs-green-dark);
+  --bs-btn-focus-shadow-rgb: 63, 122, 58;
+}
+.btn-outline-brand {
+  --bs-btn-color: var(--cs-green);
+  --bs-btn-border-color: var(--cs-green);
+  --bs-btn-hover-bg: var(--cs-green);
+  --bs-btn-hover-border-color: var(--cs-green);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-focus-shadow-rgb: 63, 122, 58;
+}
+
+/* ---- Navbar ---- */
+.navbar-cs { background: rgba(255,255,255,.92); backdrop-filter: blur(8px); }
+.navbar-cs .nav-link { font-family: "Kanit", sans-serif; font-weight: 400; }
+.navbar-cs .nav-link.active { color: var(--cs-green) !important; font-weight: 500; }
+
+/* ---- Hero ---- */
+.hero {
+  min-height: 92vh;
+  background: linear-gradient(rgba(25,40,25,.45), rgba(25,40,25,.55)),
+              url("../img/deck-riverside.jpg") center/cover no-repeat;
+}
+.hero-sm {
+  min-height: 46vh;
+  background: linear-gradient(rgba(25,40,25,.5), rgba(25,40,25,.55)),
+              url("../img/garden-bridge.jpg") center/cover no-repeat;
+}
+
+/* ---- Card hover ---- */
+.card-lift { transition: transform .25s ease, box-shadow .25s ease; }
+.card-lift:hover { transform: translateY(-6px); box-shadow: 0 1rem 2rem rgba(0,0,0,.12) !important; }
+.ratio-room > img { object-fit: cover; width: 100%; height: 100%; }
+
+/* ---- Section divider ---- */
+.section-title::after {
+  content: ""; display: block; width: 68px; height: 3px;
+  background: var(--cs-teal); margin: .85rem auto 0; border-radius: 2px;
+}
+.section-title.text-start::after { margin-left: 0; }
+
+/* ---- Floating contact ---- */
+.fab-stack { position: fixed; right: 1rem; bottom: 1rem; z-index: 1030; }
